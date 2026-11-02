@@ -1,0 +1,1 @@
+C:\Users\eduar\Desktop\Programming\algorithms\leetcode\target\debug\rust_solution.exe: C:\Users\eduar\Desktop\Programming\algorithms\leetcode\453.Minimum_Moves_to_Equal_Array_Elements\rust_solution\src\main.rs
