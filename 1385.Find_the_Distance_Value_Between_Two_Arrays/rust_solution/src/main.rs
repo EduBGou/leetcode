@@ -16,4 +16,6 @@ impl Solution {
     }
 }
 
-fn main(){}
+fn main(){
+    print!("{:?}" ,Solution::find_the_distance_value(vec![4,5,8], vec![10,9,1,8], 2))
+}
