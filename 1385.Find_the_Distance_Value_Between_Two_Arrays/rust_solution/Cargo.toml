@@ -1,0 +1,8 @@
+[package]
+name = "p1385"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "rust_solution"
+path = "src/main.rs"
