@@ -25,4 +25,10 @@ impl Solution {
     }
 }
 
-fn main() {}
+fn main() {
+    let ipt = vec![100, 4, 200, 1, 3, 2];
+    println!("ipt: {:?}", ipt);
+
+    let s = Solution::longest_consecutive(ipt);
+    println!("solution: {s}");
+}
