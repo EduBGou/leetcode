@@ -1,3 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["*/rust_solution"]
+members = [
+    "1-500/*/rust_solution",
+    "500+/*/rust_solution"
+]
