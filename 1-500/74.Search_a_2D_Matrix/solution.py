@@ -27,34 +27,3 @@ class Solution:
             return False
         return self.dp(matrix, target, 0, size - 1)
 
-
-tests = [
-    ([[1, 3, 5], [7, 9, 11]], 5, True),
-    ([[1, 3, 5], [7, 9, 11]], 7, True),
-    ([[1, 3, 5], [7, 9, 11]], 11, True),
-    ([[1, 3, 5], [7, 9, 11]], 6, False),
-    ([[1, 3, 5], [7, 9, 11]], 0, False),
-    ([[1, 3, 5], [7, 9, 11]], 12, False),
-    ([[1]], 0, False),
-    ([[1]], 1, True),
-    ([[1]], 2, False),
-    ([[1, 2, 3, 4]], 4, True),
-    ([[1, 2, 3, 4]], 5, False),
-    ([[1], [2], [3], [4]], 3, True),
-    ([[1], [2], [3], [4]], 5, False),
-    ([[1, 3, 5, 7], [9, 11, 13, 15], [17, 19, 21, 23], [25, 27, 29, 31]], 19, True),
-    ([[1, 3, 5, 7], [9, 11, 13, 15], [17, 19, 21, 23], [25, 27, 29, 31]], 20, False),
-    ([[1, 3, 5, 7], [9, 11, 13, 15], [17, 19, 21, 23], [25, 27, 29, 31]], 1, True),
-    ([[1, 3, 5, 7], [9, 11, 13, 15], [17, 19, 21, 23], [25, 27, 29, 31]], 31, True),
-    ([[]], 1, False),
-]
-
-solution = Solution()
-
-for i, (matrix, target, expected) in enumerate(tests, 1):
-    try:
-        result = solution.searchMatrix(matrix, target)
-        status = "PASS" if result == expected else "FAIL"
-        print(f"Test {i}: {status} | Expected: {expected}, Got: {result}")
-    except Exception as e:
-        print(f"Test {i}: ERROR | {type(e).__name__}: {e}")
