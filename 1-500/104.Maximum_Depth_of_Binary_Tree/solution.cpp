@@ -16,10 +16,10 @@ struct TreeNode
 class Solution
 {
 public:
-    int maxDepth(TreeNode *root)
+    int depth(TreeNode *root)
     {
         if (root == nullptr)
             return 0;
-        return 1 + max(maxDepth(root->left), maxDepth(root->right));
+        return 1 + max(depth(root->left), depth(root->right));
     }
 };
